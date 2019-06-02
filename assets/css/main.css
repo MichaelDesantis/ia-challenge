@@ -1,6 +1,10 @@
 /*
 * GENERAL UTIL CLASSES
 */
+body {
+    box-sizing: border-box;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -97,14 +101,33 @@
     top: 176px;
     left: 264px;
 }
+/*
+* RESET BUTTON
+*/
 
+.reset {
+    background: #6DAEBD;
+    border: none;
+    color: #FFF;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+    padding: 12px 24px;
+    transition: filter 200ms ease;
+}
+
+.reset:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
 
 /*
 * MODAL
 */
 .modal-overlay {
     background: rgba(0,0,0,0.8);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
