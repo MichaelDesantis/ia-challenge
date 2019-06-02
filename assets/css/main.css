@@ -1,0 +1,137 @@
+/*
+* GENERAL UTIL CLASSES
+*/
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.application {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 400px;
+}
+
+/*
+* DOTS STARTING POSITION
+*/
+.color-dot-container {
+    height: 50px;
+    width: 50px;
+}
+
+.color-dot-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.circles-wrapper {
+    justify-content: space-between;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+/*
+* LOGO
+*/
+
+.image-wrapper {
+    width: 100%;
+}
+
+.image-wrapper img{
+    height: 400px;
+    width: 400px;
+}
+
+/*
+* DROP TARGETS
+*/
+
+.drop-target-wrapper {
+    height: 400px;
+    position: absolute;
+    width: 400px;
+}
+
+.drop-target-wrapper > .drop-target {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    position: absolute;
+    width: 88px;
+    z-index: 5;
+}
+
+.drop-target-wrapper > .drop-target > img{
+    height: 50px;
+    width: 50px;
+}
+
+.drop-target-wrapper > .drop-target.black-1 {
+    top: 112px;
+    left: 16px;
+}
+
+.drop-target-wrapper > .drop-target.blue {
+    top: 16px;
+    left: 168px;
+}
+
+.drop-target-wrapper > .drop-target.red {
+    top: 32px;
+    left: 288px;
+}
+
+.drop-target-wrapper > .drop-target.green {
+    top: 208px;
+    left: 80px;
+}
+
+.drop-target-wrapper > .drop-target.black-2 {
+    top: 176px;
+    left: 264px;
+}
+
+
+/*
+* MODAL
+*/
+.modal-overlay {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+    z-index: -1;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 50;
+}
+
+.modal-overlay > .modal-center{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-overlay > .modal-center > .modal-content {
+    background: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+}
