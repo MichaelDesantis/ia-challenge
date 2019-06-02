@@ -154,7 +154,19 @@ body {
 }
 
 .modal-overlay > .modal-center > .modal-content {
+    align-items: center;
     background: #FFF;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace, sans-serif;
     padding: 20px;
+}
+
+.modal-overlay > .modal-center > .modal-content > h5 {
+    font-size: 1.4em;
+}
+
+.modal-overlay > .modal-center > .modal-content > p {
+    font-size: 0.8em;
 }
